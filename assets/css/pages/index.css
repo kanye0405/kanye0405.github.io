@@ -78,7 +78,7 @@
 }
 
 #app {
-    width: 800px;
+    width: 100%;
     height: 370px;
     padding: 0 2rem;
     display: -webkit-box;
@@ -117,16 +117,6 @@
     z-index: -10;
     -webkit-transition: all 0.75s 0.75s cubic-bezier(0.25, 0, 0.1, 1);
     transition: all 0.75s 0.75s cubic-bezier(0.25, 0, 0.1, 1);
-}
-#app:before {
-    background: -webkit-linear-gradient(top, #73DAF9, #E5F7FE);
-    background: linear-gradient(to bottom, #73DAF9, #E5F7FE);
-    opacity: var(--sunrise);
-}
-#app:after {
-    background: -webkit-linear-gradient(top, #0846B0, #23B2EE);
-    background: linear-gradient(to bottom, #0846B0, #23B2EE);
-    opacity: var(--sunset);
 }
 
 .sky {

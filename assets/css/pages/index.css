@@ -38,7 +38,7 @@
   }
 }
 
-.container {
+.collection-head {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

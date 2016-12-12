@@ -2,12 +2,12 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://mazhuang.org
+url: http://kanye0405.github.io
 date_format: "ordinal"
-title: 码志
-subtitle: "打码改变人生"
-description: "马壮的个人博客"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang
+title: Kanye的个人博客
+subtitle: "会一点代码的咸鱼"
+description: "李振羽的个人博客"
+keywords: Kanye, 节命, 李振羽, Java, JavaScript
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -16,11 +16,11 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma
-organization: Sogou, Inc.
-organization_url: https://www.sogou.com
-location: Beijing, China
-email: chumpma@gmail.com
+author: Zhenyu Li
+organization: 卖好车
+organization_url: https://www.maihaoche.com
+location: Hangzhou, China
+email: jieming@maihaoche.com
 
 # ---------------- #
 #    Navigation    #
@@ -77,39 +77,29 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: mzlogin/mzlogin.github.io
+repository: kanye0405/kanye0405.github.io
 
 # ---------------- #
 #      Socials     #
 # ---------------- #
-github_username: mzlogin
-douban_username: freedim
-facebook_username: mzlogin
-weibo_username: mzlogin
-zhihu_username: mzlogin
-twitter_username: mzlogin
+github_username: kanye0405
+zhihu_username: 李振羽
 
 # ---------------- #
 #      Comments    #
 # ---------------- #
-# support provider: disqus, duoshuo
-comments_provider: disqus
-# !!!重要!!! 请修改下面两个用户名为你自己申请的
-# !!!Important!!! Please modify usernames below to yours
-duoshuo_username: mazhuang
-disqus_username: mzlogin
-# 在使用 disqus 的时候可点击显示多说评论框
-lazy_load_duoshuo: true
+duoshuo_username: 李振羽
 
 # ---------------- #
 #    Analytics     #
 # ---------------- #
+# todo:使用百度统计
 google:
     analytics_id: UA-80669434-1
 
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_software_keywords: [Java, C++, Python, Design Patterns]
-skill_mobile_app_keywords: [Android, Reverse Engineering]
-skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
+skill_java_keywords: [Java, Spring, Dubbo,rabbitMQ, Elastic Search]
+skill_front_end_keywords: [JavaScript, Nodejs, Css, Html, React, Vue]
+skill_datebase_keywords: [Mysql, Redis ,Mongodb]

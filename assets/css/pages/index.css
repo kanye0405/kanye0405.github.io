@@ -106,19 +106,6 @@
     -ms-flex: 0 0 30%;
     flex: 0 0 30%;
 }
-#app:before, #app:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    left: calc(50% - 50vw);
-    top: calc(50% - 50vh);
-    z-index: -10;
-    -webkit-transition: all 0.75s 0.75s cubic-bezier(0.25, 0, 0.1, 1);
-    transition: all 0.75s 0.75s cubic-bezier(0.25, 0, 0.1, 1);
-}
-
 .sky {
     position: absolute;
     top: 0;

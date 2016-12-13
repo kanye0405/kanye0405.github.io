@@ -53,7 +53,7 @@ comments: false
                     </div>
                 </div>
                 <div class="times">
-                    <div class="time" data-sunrise="{{ site.time: '%H:%M:%S' }}" data-sunset="{{ site.time: '%H:%M:%S' }}"></div>
+                    <div class="time" data-sunrise="{{ site.time | site.time: '%H:%M:%S' }}" data-sunset="{{ site.time | site.time: '%H:%M:%S' }}"></div>
                 </div>
                 <div class="heavens">
                     <label for="sunrise" class="sunrise" data-title="白天"></label>

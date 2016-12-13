@@ -154,8 +154,7 @@ comments: false
 <script type="text/javascript">
     //切换为夜晚
     var hour = new Date().getHours();
-    if (hour < 7 && hour > 19) {
-        console.log("clicked");
+    if (hour < 7 || hour > 19) {
         $('.sunset').click();
     }
 </script>

@@ -53,7 +53,7 @@ comments: false
                     </div>
                 </div>
                 <div class="times">
-                    <div class="time" data-sunrise="{{ site.time | date: '%H:%M:%S' }}" data-sunset="{{ site.time | date: '%H:%M:%S' }}"></div>
+                    <div class="time" data-sunrise="{{ site.time | date: '%H:%M' }}" data-sunset="{{ site.time | date: '%H:%M' }}"></div>
                 </div>
                 <div class="heavens">
                     <label for="sunrise" class="sunrise" data-title="白天"></label>
@@ -151,3 +151,10 @@ comments: false
     <!-- /pagination -->
 </section>
 <!-- /section.content -->
+<script type="text/javascript">
+    //切换为夜晚
+    var hour = new Date().getHours();
+    if (hour < 7 && hour > 19) {
+        $('.sunrise').click();
+    }
+</script>

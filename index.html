@@ -4,7 +4,6 @@ class: home
 css: ['pages/index.css']
 comments: false
 ---
-
 <section class="banner">
     <div class="collection-head">
             <input type="radio" name="time" id="sunrise" checked />
@@ -53,7 +52,7 @@ comments: false
                     </div>
                 </div>
                 <div class="times">
-                    <div class="time" data-sunrise="{{ site.time | date: '%H:%M' }}" data-sunset="{{ site.time | date: '%H:%M' }}"></div>
+                    <div class="time" data-sunrise="00:00" data-sunset="00:00"></div>
                 </div>
                 <div class="heavens">
                     <label for="sunrise" class="sunrise" data-title="白天"></label>
@@ -63,27 +62,37 @@ comments: false
         <!--<div class="container">-->
             <!--<div class="collection-title">-->
               <!--<h1 class="collection-header" id="sub-title"><span>{{ site.subtitle }}</span></h1>-->
-                <!--<div class="collection-info">-->
-                    <!--<span class="meta-info mobile-hidden">-->
-                        <!--<span class="octicon octicon-location"></span>-->
-                        <!--{{ site.location }}-->
-                    <!--</span>-->
-                    <!--<span class="meta-info">-->
-                        <!--SendEmailForPaymentExcelTask<span class="octicon octicon-organization"></span>-->
-                        <!--<a href="{{ site.organization_url }}" target="_blank">{{ site.organization }}</a>-->
-                    <!--</span>-->
-                     <!--<span class="meta-info">-->
-                        <!--<span class="octicon octicon-mark-github"></span>-->
-                        <!--<a href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }}</a>-->
-                    <!--</span>-->
-                <!--</div>-->
+                <div class="collection-info">
+                    <span class="meta-info mobile-hidden">
+                        <span class="octicon octicon-location"></span>
+                        {{ site.location }}
+                    </span>
+                    <span class="meta-info">
+                        <span class="octicon octicon-organization"></span>
+                        <a href="{{ site.organization_url }}" target="_blank">{{ site.organization }}</a>
+                    </span>
+                     <span class="meta-info">
+                        <span class="octicon octicon-mark-github"></span>
+                        <a href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }}</a>
+                    </span>
+                </div>
             <!--</div>-->
         <!--</div>-->
             </div>
     </div>
 </section>
-
-
+<script type="text/javascript">
+    //设置时间
+    var now = new Date(),
+        hour = now.getHours(),
+        minute = now.getUTCMinutes(),
+        time = hour+":"+minute;
+    $('.time').attr('data-sunrise',time).attr('data-sunset',time);
+    //切换为夜晚
+    if (hour < 7 || hour > 19) {
+        $('.sunset').click();
+    }
+</script>
 
 <!-- /.banner -->
 <section class="container content">
@@ -151,10 +160,3 @@ comments: false
     <!-- /pagination -->
 </section>
 <!-- /section.content -->
-<script type="text/javascript">
-    //切换为夜晚
-    var hour = new Date().getHours();
-    if (hour < 7 || hour > 19) {
-        $('.sunset').click();
-    }
-</script>

@@ -11,6 +11,14 @@
     -webkit-box-shadow: none
 }
 
+.home .banner .collection-info {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    height: 30px;
+}
+
+
 .home .site-header {
     border-bottom: none
 }

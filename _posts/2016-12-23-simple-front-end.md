@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 后端快速搭建网站攻略
-categories: Java
+categories: 前端
 description: 连后端人员都可以拿来做网站的技术。
-keywords: Google, Skill
+keywords: Bootstrap,Javascript,UI
 ---
 
 对于后端人员，最痛苦的莫过于做一套美观兼容的样式，幸好现在网上有很多UI（用户界面）框架，今天就介绍一些简单易学的前端技术。

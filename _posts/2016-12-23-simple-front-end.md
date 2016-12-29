@@ -8,6 +8,7 @@ keywords: Bootstrap,Javascript,UI
 
 对于后端人员，最痛苦的莫过于做一套美观兼容的样式，幸好现在网上有很多UI（用户界面）框架，今天就介绍一些简单易学的前端技术。
 
+> 本文最早目的是提供大量简单的前端工具，结果加着加着发现好多学习成本都不低，我会在学习成本高的项目后面加上星号（*）
 
 # 技术选型
 
@@ -30,7 +31,7 @@ keywords: Bootstrap,Javascript,UI
     - class命名不够语义化
     - ~~没有逼格~~
 
-2.  [adminLTE](https://www.almsaeedstudio.com)
+2.  [AdminLTE](https://www.almsaeedstudio.com)
 
     > 一款优秀的基于Bootstrap的模板，集成了许多js库，这个项目就是我基于adminLTE,将部分前端组件替换为更适合国人的组件，并汉化了文档
 
@@ -48,7 +49,6 @@ keywords: Bootstrap,Javascript,UI
 
     **优点：**
 
-
     - 对移动端支持比[Bootstrap](http://www.bootcss.com)好
     - JS库采用[Zepto](http://zeptojs.com/)（这点有好有坏）
 
@@ -57,7 +57,7 @@ keywords: Bootstrap,Javascript,UI
     - 没有中文文档
     - Foundation4 不支持IE7/8
 
-4.  [Material Design](http://http://materializecss.com/)
+4.  [Material Design](http://http://materializecss.com/) *
 
     > Material Design 只是谷歌设计部提供的一种**设计规范**，具体实现UI不下4种，这里贴的是github上找得到项目的
 
@@ -70,7 +70,7 @@ keywords: Bootstrap,Javascript,UI
 
     - 没有中文文档
 
-5.  [Ant Design](http://ant.design)
+5.  [Ant Design](http://ant.design) *
 
     **优点：**
 
@@ -134,7 +134,21 @@ keywords: Bootstrap,Javascript,UI
     - 如果不同页面id会遇到麻烦
 
 	> 简单的用了下，文档还是不错的，还提供了些字符串方法，但左侧菜单列表是用json配置的，然后文档还没写，这点要注意下。
-	
+
+10. [Blueprint](http://blueprintjs.com/) *
+
+    **优点：**
+
+    - 适用于复杂、数据密集的页面
+    - 移动端支持良好
+    - 提供了与java/php/.net整合的demo
+
+    **缺点：**
+    
+    - 需要Nodejs6以上
+    - 基于React
+    - 没有中文文档
+
 
 ## 通用类Javascript库
 
@@ -142,7 +156,7 @@ keywords: Bootstrap,Javascript,UI
 
 目前主流的通用类Javascript库有：
 
-1. [jQuery](http://jquery.com/),目前使用最多的js库
+1. [Jquery](http://jquery.com/),目前使用最多的js库
 
    >  2.0 版本以后，将不再支持 IE 6/7/8，如果有支持IE的需求，请使用1.11（所以1开头的都支持IE678）
 
@@ -154,7 +168,7 @@ keywords: Bootstrap,Javascript,UI
 
    [Zepto使用中的一些注意点](http://chaoskeh.com/blog/some-experience-of-using-zepto.html)
 
-3. [lodash](https://lodash.com/)
+3. [Lodash](https://lodash.com/)
 
    > lodash提供了很多jQ没有的方法，一般Nodejs项目都会引用lodash
 
@@ -211,7 +225,7 @@ var dates = $.fn.datepicker.dates = {
 
 1. [Datepicker](http://jqueryui.com/datepicker/)
 
-   这里需要区分下：jQ提供的是[Datepicker](http://jqueryui.com/datepicker/)，[Bootstrap](http://www.bootcss.com)提供的是[bootstartp-datepicker](http://www.bootcss.com/p/bootstrap-datetimepicker/)，我们项目和[adminLTE](https://www.almsaeedstudio.com)用的都是[bootstartp-datepicker](http://www.bootcss.com/p/bootstrap-datetimepicker/)
+   这里需要区分下：jQ提供的是[Datepicker](http://jqueryui.com/datepicker/)，Bootstrap提供的是[bootstartp-datepicker](http://www.bootcss.com/p/bootstrap-datetimepicker/)，我们项目和[adminLTE](https://www.almsaeedstudio.com)用的都是[bootstartp-datepicker](http://www.bootcss.com/p/bootstrap-datetimepicker/)
 
 2. [DateRangePicker](http://www.daterangepicker.com/)
 
@@ -225,42 +239,53 @@ var dates = $.fn.datepicker.dates = {
 
    日期处理类库,比如格式化／比较／算时间等，有着良好的中文支持，一些时间类组件会依赖它。
 
+5. [Flatpickr](https://chmln.github.io/flatpickr/)
+
+    非常好看的日期选择器！我目前使用的开源的日期选择器里唯一让我感觉每款主题都好看的，而且没有依赖任何插件，**非常推荐**！
+
 ## 图表类
 
 > 个人推荐使用echarts,下面的Demo也是采用echarts
 
 1. [Chart](http://www.chartjs.org/)
 
-   [adminLTE](https://www.almsaeedstudio.com)采用的图表工具，Github上Star最多的图表工具
+   adminLTE采用的图表工具，Github上Star最多的图表工具
 
-2. [echarts](http://echarts.baidu.com/)
+2. [Echarts](http://echarts.baidu.com/)
 
    百度推出的图表工具，更适合国人
 
 3. [D3](https://d3js.org/)
 
    如果你发现一般的竖饼折无法满足你的需求时，可以试试这个
+   
+4. [Jquery Linechart](https://github.com/kiqs/jquery-linechart)
+
+    基于jQuery的简单图表构建工具，构建出来的很有github的风格。
 
 ## 输入框／下拉菜单
 
 1. [Tokenfield](http://sliptree.github.io/bootstrap-tokenfield/)
 	
-	当你有大量地名／颜色等标签要去多选的时候，可以尝试下Tokenfield。[Tokenfield](http://sliptree.github.io/bootstrap-tokenfield/)是一款基于bootstrap，使用输入框实现标签多选的插件。
+	当你有大量地名／颜色等标签要去多选的时候，可以尝试下Tokenfield——一款基于bootstrap，使用输入框实现标签多选的插件。
 	
-2. [selectize](http://selectize.github.io/selectize.js/)
+2. [Selectize](http://selectize.github.io/selectize.js/)
 
     一款非常优秀的下拉菜单组件，功能比 Tokenfield 更强大。
+    
+3. [Cleave.js](http://nosir.github.io/cleave.js/)
 
+    规范输入框内容工具，上面的银行卡和手机号验证，对国内不好用。但下面的自定义验证很好用。
 	
 ## 富文本编辑器
 
 > Bootstrap提供的富文本编辑器就是 wysiwyg，但个人更推荐ueditor，Demo中使用的也是ueditor
 
-1. [wysiwyg](http://www.bootcss.com/p/bootstrap-wysiwyg/)
+1. [Wysiwyg](http://www.bootcss.com/p/bootstrap-wysiwyg/)
 
    一款很轻量的富文本编辑器，只有5KB，但仅支持IE10以上
 
-2. [ueditor](http://ueditor.baidu.com/)
+2. [Ueditor](http://ueditor.baidu.com/)
 
    百度推出的富文本编辑器，(Mini版已经许久不更新了，而且下载链接已挂)
 
@@ -279,25 +304,65 @@ var dates = $.fn.datepicker.dates = {
 
    [配置方法](http://docs.fineuploader.com/quickstart/02-setting_options-azure.html)
 
-2. [image-selecter](https://github.com/shrekshrek/image-selecter)
+2. [Image-selecter](https://github.com/shrekshrek/image-selecter)
 
    一个移动端单图上传工具，主要是修复横竖屏问题，但其他方面不好用
 
 如果传的图片有顺序需求，请使用眼镜猴写的上传后拖拽插件
 
-## 轮播图/全屏滚动
+## 图片
 
 大部分UI框架都提供了轮播图插件，如果无法使用，可以考虑owl.carousel
 
-1. [owl.carousel](http://owlgraphic.com/owlcarousel/)
+1. [Owl.carousel](http://owlgraphic.com/owlcarousel/)
 
    一款pc和移动端都可以使用的轮播图工具
+   
+   > 如果无法访问，可以尝试 [GithubPreview](http://htmlpreview.github.io/?https://github.com/OwlFonk/OwlCarousel/blob/master/index.html)。另外[Owl.carousel2](http://owlcarousel2.github.io/OwlCarousel2/) 现在是beta版（2016-12-29），有兴趣的可以尝试。关于 1 和 2 有何不同，我也不知道...
 
-2. [FullPage](http://alvarotrigo.com/fullPage/)
+2. [BaguetteBox](https://feimosi.github.io/baguetteBox.js/)
+    
+    一个简单、易用的响应式 Lightbox 图片库。它支持移动端上触滑动手势操作。同时，它还是用纯 JavaScript 编写的。
+
+3. [JqGifPreview](https://github.com/SodhanaLibrary/jqGifPreview)
+
+    一个简单的 jQuery 插件，用于创建 GIF 预览。
+
+4. [JfMagnify](https://github.com/fonstok/jfMagnify)
+
+    基于jQuery，可以为任何 HTML 元素创建放大镜效果（不只是图像）的插件。
+
+5. [Image Blur Plugin](https://msurguy.github.io/background-blur/)
+
+    基于jQuery的图像模糊插件，支持IE6~IE8,但无渐变效果。
+
+6. [Skippr](http://austenpayan.github.io/skippr/)
+
+   基于jQuery的轻量级轮播图插件。我推荐这款的原因就是：Owl.carousel旧版访问不了，新版还是beta。
+
+## 弹框
+
+一开始我是不认为有这个的需求的，因为alert没必要改，bootstrap又提供了不错的modal模板。但下面2款插件我觉得还是要介绍的。
+
+1. [Izimodal](http://izimodal.marcelodolce.com/)
+
+    基于jQuery的优雅、响应式、灵活、轻量级（前面4个是他自称的）弹框插件。
+
+2. [Sweetalert2](https://limonte.github.io/sweetalert2/)
+
+    SweetAlert2 是一个漂亮、可定制的 JS 弹窗插件，它用于替代浏览器默认的弹窗效果。一旦使用了它，基本你就告别alert()/confirm()等原生方法了。
+    
+## 滚动
+
+1. [FullPage](http://alvarotrigo.com/fullPage/)
 
    一般官网或产品宣传页可以用这个做全屏滚动
+   
+2. [Scroll Reveal](https://scrollrevealjs.org/)
 
-## 分页
+    无论是为桌面，或是移动浏览器，ScrollReveal 插件都可以轻松、快速的帮助你为其创建页面滚动显示动画。
+
+## 表格
 
 大部分UI框架都提供了静态分页按钮，配合服务端渲染时循环，可以实现后台分页
 
@@ -306,6 +371,10 @@ var dates = $.fn.datepicker.dates = {
 1. [DataTables](https://www.datatables.net/)
 
    基于jQ的表格插件（自带分页），支持前台分页，目前Java项目正在使用
+   
+2. [Tabulator](http://olifolkerd.github.io/tabulator/)
+
+    基于jQ的表格插件，做出来的表格画风很像Chrome的控制台。
 
 ## 地图
 
@@ -382,6 +451,26 @@ var dates = $.fn.datepicker.dates = {
 3. [日出日落动画](http://codepen.io/davidkpiano/pen/VmMWZW)	
 
 	纯 CSS 还原 Dribbble 上 Denys Boldyriev 和 Andrey Pixy 所设计的日出/日落动画效果，目前只能在 Chrome 浏览器中运行。
+	
+4. [Css Loader](http://codepen.io/CKH4/pen/ZGNyep/)
+
+    这是一个利用 Slim+CSS 预处理器 Stylus 实现的简单动画。作者写代码很精炼、简洁。
+   
+5. [Rainbow Loader](http://codepen.io/jackrugile/pen/JddmaX/)
+
+    为客户端改良的纯 CSS 实现的彩虹加载动画。
+    
+6. [Light Loader](http://codepen.io/jackrugile/pen/BlDjk/)
+
+    CSS+JS 实现的艳丽火花效果的 Canvas 加载动画。
+
+7. [CSS Stairs Loader](http://codepen.io/ispal/pen/mVaaJe/)
+
+    纯 CSS 实现的楼梯循环加载动画。
+    
+8. [ChoreographerJS](https://christinecha.github.io/choreographer-js/)
+
+    用于处理复杂动画的简单库。
 
 ## TODO:
 

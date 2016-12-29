@@ -141,7 +141,6 @@ keywords: Bootstrap,Javascript,UI
 
     - 适用于复杂、数据密集的页面
     - 移动端支持良好
-    - 提供了与java/php/.net整合的demo
 
     **缺点：**
     
@@ -159,8 +158,6 @@ keywords: Bootstrap,Javascript,UI
 1. [Jquery](http://jquery.com/),目前使用最多的js库
 
    >  2.0 版本以后，将不再支持 IE 6/7/8，如果有支持IE的需求，请使用1.11（所以1开头的都支持IE678）
-
-   更多关于jQ的知识请见眼镜猴的js&jQ技术分享
 
 2. [Zepto](http://zeptojs.com/),专注**移动端**的js库,体积不到jQ的一半，也少了很多方法
 
@@ -241,7 +238,7 @@ var dates = $.fn.datepicker.dates = {
 
 5. [Flatpickr](https://chmln.github.io/flatpickr/)
 
-    非常好看的日期选择器！我目前使用的开源的日期选择器里唯一让我感觉每款主题都好看的，而且没有依赖任何插件，**非常推荐**！
+    非常好看的日期选择器！我使用过的开源的日期选择器里唯一让我感觉每款主题都好看的，而且没有依赖任何插件，**非常推荐**！
 
 ## 图表类
 
@@ -275,7 +272,7 @@ var dates = $.fn.datepicker.dates = {
     
 3. [Cleave.js](http://nosir.github.io/cleave.js/)
 
-    规范输入框内容工具，上面的银行卡和手机号验证，对国内不好用。但下面的自定义验证很好用。
+    规范输入框内容工具，上面的银行卡和手机号验证不是很适合国内情况。但下面的自定义验证很好用。
 	
 ## 富文本编辑器
 
@@ -307,8 +304,6 @@ var dates = $.fn.datepicker.dates = {
 2. [Image-selecter](https://github.com/shrekshrek/image-selecter)
 
    一个移动端单图上传工具，主要是修复横竖屏问题，但其他方面不好用
-
-如果传的图片有顺序需求，请使用眼镜猴写的上传后拖拽插件
 
 ## 图片
 
@@ -342,7 +337,7 @@ var dates = $.fn.datepicker.dates = {
 
 ## 弹框
 
-一开始我是不认为有这个的需求的，因为alert没必要改，bootstrap又提供了不错的modal模板。但下面2款插件我觉得还是要介绍的。
+一开始我是不认为有这个的需求的，因为很多UI框架已经提供了不错的modal模板。但下面2款插件我觉得还是要介绍的。
 
 1. [Izimodal](http://izimodal.marcelodolce.com/)
 
@@ -352,6 +347,8 @@ var dates = $.fn.datepicker.dates = {
 
     SweetAlert2 是一个漂亮、可定制的 JS 弹窗插件，它用于替代浏览器默认的弹窗效果。一旦使用了它，基本你就告别alert()/confirm()等原生方法了。
     
+    > 以前和别人讨论过网页UI发展趋势如何，它提出"像客户端"，现在想想说的很对，现在前端能够发展这么快，就是因为他有可能替代大部分pc上的软件和手机上的app。这两个插件的设计都是给人一种"哇，这不是网页"的感觉。
+    
 ## 滚动
 
 1. [FullPage](http://alvarotrigo.com/fullPage/)
@@ -360,7 +357,7 @@ var dates = $.fn.datepicker.dates = {
    
 2. [Scroll Reveal](https://scrollrevealjs.org/)
 
-    无论是为桌面，或是移动浏览器，ScrollReveal 插件都可以轻松、快速的帮助你为其创建页面滚动显示动画。
+    无论是为桌面，或是移动浏览器，ScrollReveal 插件都可以轻松、快速的帮助你为其创建页面滚动显示动画。我觉得这个叫做**瀑布流**更好。
 
 ## 表格
 
@@ -381,6 +378,7 @@ var dates = $.fn.datepicker.dates = {
 1. [百度地图](http://lbsyun.baidu.com/)
 
 2. [高德地图](http://developer.amap.com/)
+
    阿里旗下
 
    ​
@@ -474,5 +472,8 @@ var dates = $.fn.datepicker.dates = {
 
 ## TODO:
 
-- [ ] 使用 Ant Design Mobile
-- [ ] 将一些其他框架好的组件更新到这个项目里 
+### 主线任务：
+- [ ] 使用 Ant Design Mobile (0/1)
+
+### 每日任务
+- [ ] 将一些其他框架好的组件更新到这个项目里 (0/1) 

@@ -88,12 +88,12 @@ zhihu_username: 李振羽
 # ---------------- #
 #      Comments    #
 # ---------------- #
-duoshuo_username: 李振羽
+duoshuo_username: kanye0405
 
 # ---------------- #
 #    Analytics     #
 # ---------------- #
-# todo:使用百度统计
+
 google:
     analytics_id: UA-80669434-1
 

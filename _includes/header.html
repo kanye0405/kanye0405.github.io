@@ -69,14 +69,22 @@
     <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="/assets/js/jquery-ui.js"></script>
     <script type="text/javascript">
-    function toggleMenu() {
-        var nav = document.getElementsByClassName("site-header-nav")[0];
-        if (nav.style.display == "inline-flex") {
-          nav.style.display = "none";
-        } else {
-          nav.style.display = "inline-flex";
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?f4d0d3ca5f8d34db35f69a40c73445dc";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+
+        function toggleMenu() {
+            var nav = document.getElementsByClassName("site-header-nav")[0];
+            if (nav.style.display == "inline-flex") {
+              nav.style.display = "none";
+            } else {
+              nav.style.display = "inline-flex";
+            }
         }
-    }
     </script>
 </head>
 <body class="{{ page.class }}" data-mz="{{ page.class }}">

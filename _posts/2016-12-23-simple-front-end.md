@@ -335,6 +335,10 @@ var dates = $.fn.datepicker.dates = {
 
    基于jQuery的轻量级轮播图插件。我推荐这款的原因就是：Owl.carousel旧版访问不了，新版还是beta。
 
+7. [ImageHover](http://imagehover.io/)
+       
+   用于展示鼠标悬停图片信息的css库。可以做到默认显示图片，当鼠标移动到图片上时显示自定义文字。
+
 ## 弹框
 
 一开始我是不认为有这个的需求的，因为很多UI框架已经提供了不错的modal模板。但下面2款插件我觉得还是要介绍的。
@@ -409,6 +413,14 @@ var dates = $.fn.datepicker.dates = {
 1. [iconfont](http://www.iconfont.cn/)
 
    阿里的图表库，只要引用一个css，就可以定制图标
+   
+2. [hamburgers](https://jonsuh.com/hamburgers/)
+    
+    有动画的图标。
+    
+3. [Spinners](https://boguz.github.io/Spinners)
+
+    大量好看的加载图标。
 
 ## 网站统计
 

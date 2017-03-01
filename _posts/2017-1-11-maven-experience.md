@@ -3,7 +3,7 @@ layout: post
 title: Maven使用感受及遇到问题总结
 categories: Java
 description: 总结maven使用时出过的一些低级错误
-keywords: maven,java
+keywords: Maven,Java
 ---
 
 新年第一篇文章，[多说](http://duoshuo.com/)和[百度统计](http://tongji.baidu.com/)终于加上了，希望大家多多评论。另外总结mac上推荐工具的还在草稿区，争取年前写完。

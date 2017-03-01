@@ -34,13 +34,19 @@ keywords: Chrome,extensions
 
     Google官方的插件用于分析网站性能。
     
-6. [Octotree]()
+6. [Octotree](https://github.com/buunguyen/octotree)
 
     Octotree 是一个 Chrome 扩展，用来显示 Github 项目的目录结构。对于喜欢逛Github的小伙伴**非常推荐**。
     
 7.  Office Online
 
     在线的Office全家桶 ，可惜我自从下载后一次没用过。
+    
+8. Remote Debugging
+
+    首先，它不是插件，他是Google官方提供的远程调试工具，只需数据线连接手机，进入 chrome://inspect/#devices 页面，就可以查看手机上网页的信息。具体操作方法可以查看这篇文章。
+    
+    [使用Chrome 浏览器调试移动端网页](http://blog.csdn.net/byc233518/article/details/52437498)
 
 # 娱乐类工具
 

@@ -33,6 +33,11 @@ keywords: Dubbo, Java
 
 切记！切记！dubbo中使用的model一定是序列化。
 
+## 项目基于maven互相调用，deploy失败
+
+dubbo项目切忌a调b，b又调a这样循环调用会导致maven打包失败。尤其不要因为偷懒在自己的接口调用别人的model。这样别人调你的接口时，又要调另一个人。
+如果一定要调，可在pom文件里添加 <exclusions> 来排除依赖。
+
 
 
 

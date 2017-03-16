@@ -148,7 +148,37 @@ keywords: Bootstrap,Javascript,UI
     - 基于React
     - 没有中文文档
 
+11. [Vaadin](https://vaadin.com/home) *
 
+    **优点:**
+    
+    - 用java写前端
+    - 区别于Velocity/Thymeleaf 这种html + java 的混合，这个更优雅
+    
+    ``` java
+    public class MyUI extends UI {
+      protected void init(VaadinRequest request) {
+        final TextField name = new TextField("Name");
+        final Button greetButton = new Button("Greet");
+    
+        greetButton.addClickListener(
+          e -> Notification.show("Hi " + name.getValue())
+        );
+        setContent(new VerticalLayout(name, greetButton));
+      }
+    }
+    ```
+    
+    **缺点:**
+    
+    - 除了少数简单功能，剩下都是**收费**的（比如表格）
+    - 官网没有中文文档，国内使用人数不多
+    
+    > 总结： 在这个前后端分离的时代，Vaadin看上去是在做一件逆潮流的蠢事，然而真的是这样么？显然不是。
+      据我所知，国内大部分管理后台都是后端程序员用bootstrap/adminLTE之类随便改出来的，很多Javaer几乎不会css。
+      这款产品的目标人群就是要写页面的Javaer，所以他的语法既像ES6，又像Java。所以如果不想学css的Javaer可以尝试Vaadin。
+    
+    
 ## 通用类Javascript库
 
 > 虽然部分UI框架也提供了js库，但实际使用中还是会遇到提供的无法满足需求的情况，以下3种都是比较常用的js库
@@ -290,6 +320,9 @@ var dates = $.fn.datepicker.dates = {
 
    > 因为ueditor有很多功能需要与服务器交互，所以最好根据服务端前往官网下载版本，Demo里使用的是完整源码版
 
+3. [Draft](https://draftjs.org/)
+
+   > 一款基于React的富文本编辑器，目前已经知乎正在使用。
 
 ## 图片上传
 

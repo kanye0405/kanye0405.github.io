@@ -142,12 +142,16 @@ Apache Commons是一个非常有用的工具包，虽然它提供的大部分功
 1. [POI](http://poi.apache.org/)
 
 	Apache 出品的 Java 操作 Microsoft Office 的工具
+	
+2. [Flying Sauser](https://github.com/flyingsaucerproject/flyingsaucer)
 
-2. 	[Thumbnailator](https://github.com/coobird/thumbnailator)
+    开源的html生成pdf工具。
+
+3. 	[Thumbnailator](https://github.com/coobird/thumbnailator)
 	
 	图片处理工具
 
-3. [顽兔](http://wantu.taobao.com/mediaportal/index.htm)
+4. [顽兔](http://wantu.taobao.com/mediaportal/index.htm)
 	
 	阿里云提供的文件存储云，有着很赞的文件处理api，另外七牛云也不错。	
 

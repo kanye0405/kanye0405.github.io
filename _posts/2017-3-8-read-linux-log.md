@@ -16,4 +16,8 @@ keywords: Linux, Java， Log
 
 这段的意思是 搜索xxx.log中 ERROR部分，并把其后10行打印出来。同理，ERROR这个关键词可以换成其他能更精确定位到bug的关键词。
 
+2017年04月10日更新
+
+发现linux 自带的less和more命令很强。 less xxx.log 查看全文。 more +/sss xxx.log 从文件中查找第一个出现"sss"字符串的行，并从该处前两行开始显示输出 
+
 

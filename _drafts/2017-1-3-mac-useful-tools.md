@@ -32,8 +32,11 @@ keywords: mac,extensions
  
 ## 命令行工具
 
-1. []
+1. [Oh My Zsh](http://ohmyz.sh/)
 
+    拥有大量的有用的功能，助手，插件，主题，等特性的命令行工具插件。
+    
+    > 目前使用最多的命令行工具就是iTerm2和ohMyZsh了，
 
 2. [hyper]()
 

@@ -14,7 +14,9 @@ keywords: mac,extensions
 
 ## 编辑器
 
-     > 编辑器分两种：文本编辑器（Text Editor）和 开发集成环境 （IDE，Integrated Development Environment）。前者开启速度快，后者功能强大。一般我认为两种都要至少有一个的。比如我开发一个项目，经常需要debug，这时候ide就很方便了。而有时我只想查看一个文件，如果用ide去打开就会很慢，所以就要选择文本编辑器。
+     > 编辑器分两种：文本编辑器（Text Editor）和 开发集成环境 （IDE，Integrated Development Environment）。
+     前者开启速度快，后者功能强大。一般我认为两种都要至少有一个的。比如我开发一个项目，经常需要debug，这时候ide就很方便了。
+     而有时我只想查看一个文件，如果用ide去打开就会很慢，所以就要选择文本编辑器。
 
 1. [Intellij Idea](https://www.jetbrains.com/idea/)
     
@@ -36,27 +38,41 @@ keywords: mac,extensions
 
     拥有大量的有用的功能，助手，插件，主题，等特性的命令行工具插件。
     
-    > 目前使用最多的命令行工具就是iTerm2和ohMyZsh了，
+    > 目前使用最多的命令行工具就是iTerm2和ohMyZsh了，ohMyZsh有很多好看的主题，我现在使用的是ys
 
-2. [hyper]()
+2. [hyper](https://hyper.is)
+
+    用js实现的终端，很好看，但对中文会有些兼容性bug，需要手动设置字体宽度。
+    
+    > hyper最有意思的一点是输入wow后，打字时整个终端都会震动起来。
 
 ## 版本控制
 
-1. [SourceTree]()
+1. [SourceTree](https://www.sourcetreeapp.com/)
+
+    免费的可视化git管理工具，几乎所有命令都可以通过sourceTree的按钮执行，节省大量时间。
 
 ## 数据库
 
-1. [Navicat]()
+1. [Navicat](https://www.navicat.com.cn/)
 
-2. [Sequel Pro]
+    目前使用最多的数据库管理工具，支持mysql、oracle、postgresql等。
+
+2. [Sequel Pro](http://www.sequelpro.com/)
+
+    一款小众的mysql管理工具，相较于Navicat最大的优点是完全免费。
 
 ## 设计&&产品
 
-1. [Xmind]()
+1. [Xmind](http://www.xmindchina.net/)
+    
+    思维导图，有时候我们接到需求后，需要理一下开发的逻辑；或者测试前整理test case
 
 2. [Sketch]()
 
-3. []()
+## 测试
+
+1. [Charles]()
 
 # 日常工具
 

@@ -8,15 +8,13 @@ keywords: mac,extensions
 
 本来是新年第一篇文章，结果写到一半一直放在草稿区（懒癌晚期）。今天就来介绍下我曾使用的mac工具吧，顺便吐槽下当年遇到哪些坑。
 
-> 先表下态，我肯定是希望所有人都用正版的。但部分收费软件价格可能无法令人接受，所以我可能会给一些学习链接。
-
 # 开发类工具
 
 ## 编辑器
 
-     > 编辑器分两种：文本编辑器（Text Editor）和 开发集成环境 （IDE，Integrated Development Environment）。
-     前者开启速度快，后者功能强大。一般我认为两种都要至少有一个的。比如我开发一个项目，经常需要debug，这时候ide就很方便了。
-     而有时我只想查看一个文件，如果用ide去打开就会很慢，所以就要选择文本编辑器。
+> 编辑器分两种：文本编辑器（Text Editor）和 开发集成环境 （IDE，Integrated Development Environment）。
+前者开启速度快，后者功能强大。一般我认为两种都要至少有一个的。比如我开发一个项目，经常需要debug，这时候ide就很方便了。
+而有时我只想查看一个文件，如果用ide去打开就会很慢，所以就要选择文本编辑器。
 
 1. [Intellij Idea](https://www.jetbrains.com/idea/)
     
@@ -68,14 +66,20 @@ keywords: mac,extensions
     
     思维导图，有时候我们接到需求后，需要理一下开发的逻辑；或者测试前整理test case
 
-2. [Sketch]()
+2. Sketch
+
+    一般是设计要用的，但开发有时要看设计稿，于是就也要装Sketch。这款软件是收费的。
+    
+    > 这里推荐一下zeplin，可以完美的将.sketch文件转为可以标注大小和颜色的页面，大大减少开发查看设计稿的时间。
 
 ## 测试
 
-1. [Charles]()
+1. [Charles](https://www.charlesproxy.com/)
 
-# 日常工具
-
-
+    一个抓包工具，如果想知道你的手机到底向后台请求了什么，那么可以装一个。同样是要收费的。
 
 # 其他推荐
+
+[github上的Mac工具仓库](https://github.com/jaywcjlove/awesome-mac)
+
+[知乎上Mac 上有哪些鲜为人知且极大提高工作效率的工具？](https://www.zhihu.com/question/39953134)

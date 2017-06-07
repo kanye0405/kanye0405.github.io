@@ -49,3 +49,7 @@ org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal o
 去网上找也没什么匹配的答案，后来和同事琢磨出原因了。我们项目并没有用到这个包（用的是他这个项目的其他Module），所以这部分代码没有传到私人仓库中。但引用时却引用到了。
 
 解决方法：只要把这个jar deploy就可以了。
+
+## mvn install后 IDE仍无法提示修改的内容
+
+应该是IDE本地的缓存导致的，重启IDE或者把pom里对应的依赖先删掉，再加上就好了

@@ -303,6 +303,16 @@ var dates = $.fn.datepicker.dates = {
 3. [Cleave.js](http://nosir.github.io/cleave.js/)
 
     规范输入框内容工具，上面的银行卡和手机号验证不是很适合国内情况。但下面的自定义验证很好用。
+    
+4. [Select2.js](https://select2.github.io)
+
+    一款基于jQuery的下拉菜单组件，在AdminLTE中对其样式有优化。 
+      
+5. [Distpicker](https://fengyuanchen.github.io/distpicker/)
+
+    基于jQuery的国内省市区级联查询。非常简单。
+
+    
 	
 ## 富文本编辑器
 

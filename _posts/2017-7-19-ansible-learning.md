@@ -5,6 +5,7 @@ categories: Linux
 description: 自动化IT工具ansible学习心得
 keywords: ansible,linux,IT
 ---
+最近学习了一款自动化IT工具——ansible，因为发现一些错误在网上很难搜到解决方案，只能自己摸索，于是把自己遇到的问题总结了一遍。
 
 # 心得
 
@@ -57,7 +58,7 @@ ansible all -m ping
 
 如果报错，可以加上 -vvvv查看详细报错原因
 
-  > 值得注意，ansible默认是用你当前用户去指定机器上操作，比如你本地用户叫kanye，线上用户叫root，就会出现Permission Denied
+  > 值得注意，ansible默认是用你当前用户去指定机器上操作，比如你本地用户叫kanye，线上用户叫root，就会出现Connection refused错误
 
 ## 执行
 
@@ -66,6 +67,8 @@ ansible test -a "/bin/echo hello" -u root
 ```
 
 这样做就成功的在test分组的机器上全部执行 echo hello 命令了
+
+  > ansible默认是在当前目录下读取hosts文件的，所以请在/etc/ansible下执行命令，或修改配置文件，使他读取指定位置
 
 ## playbook
 
